@@ -1,0 +1,108 @@
+/* Ampliación acotada: no modifica los archivos originales de Prixima.
+   Se carga después de alicorp-secciones.css. */
+
+#productos .product-item[hidden] {
+display:none !important;
+}
+
+#productos .product-card .brand-more {
+min-width:5.5rem;
+}
+
+#productos .product-card img {
+max-width:100%;
+}
+
+#nosotros .evolution-timeline {
+margin-top:2rem;
+}
+
+#nosotros .evolution-timeline .timeline-intro {
+max-width:48rem; margin:0 auto 1.6rem; text-align:center; font-size:.92rem; color:#586875;
+}
+
+#nosotros .evolution-timeline .timeline-list {
+--milestones:7; list-style:none; display:grid; grid-template-columns:repeat(var(--milestones),minmax(0,1fr)); gap:0; position:relative; padding:0; margin:0;
+}
+
+#nosotros .evolution-timeline .timeline-list::before {
+content:""; position:absolute; top:.65rem; left:0; right:0; height:6px; background:#d4d8dc;
+}
+
+#nosotros .evolution-timeline .timeline-list > li {
+position:relative; min-width:0; padding:2.25rem .55rem 0; text-align:center;
+}
+
+#nosotros .evolution-timeline .timeline-list > li::before {
+content:""; position:absolute; top:.25rem; left:calc(50% - .55rem); width:1.1rem; height:1.1rem; background:#4f5b66; border:2px solid #4f5b66; border-radius:50%; z-index:1;
+}
+
+#nosotros .evolution-timeline .timeline-year {
+display:block; font-size:1rem; line-height:1.35; color:#24313b; font-weight:700;
+}
+
+#nosotros .evolution-timeline .timeline-title {
+font-size:.86rem; line-height:1.4; margin:.55rem 0 .4rem; color:#24313b; font-weight:700;
+}
+
+#nosotros .evolution-timeline .timeline-list p {
+font-size:.83rem; line-height:1.5; margin:0; overflow-wrap:break-word;
+}
+
+#nosotros .evolution-timeline .timeline-status {
+display:inline-block; margin-top:.6rem; color:#586875; font-size:.73rem; line-height:1.4; border-bottom:1px dashed #a6afb5;
+}
+
+#nosotros .evolution-timeline .timeline-sources {
+margin-top:1.4rem; font-size:.8rem; color:#586875;
+}
+
+#nosotros .evolution-timeline .timeline-sources summary {
+cursor:pointer; font-weight:700; color:#24313b;
+}
+
+#nosotros .evolution-timeline .timeline-sources ul {
+margin:.65rem 0 0; padding-left:1.2rem;
+}
+
+#nosotros .evolution-timeline a:focus-visible {
+outline:3px solid #b4232d; outline-offset:3px;
+}
+
+@media (max-width:1199.98px) {
+
+ #nosotros .evolution-timeline .timeline-list {
+grid-template-columns:1fr; gap:0; padding:0 0 0 1.8rem; margin-left:.3rem;
+}
+
+ #nosotros .evolution-timeline .timeline-list::before {
+top:.4rem; bottom:1rem; left:.45rem; right:auto; width:4px; height:auto;
+}
+
+ #nosotros .evolution-timeline .timeline-list > li {
+text-align:left; padding:0 0 1.5rem 1rem;
+}
+
+ #nosotros .evolution-timeline .timeline-list > li::before {
+top:.2rem; left:-1.8rem;
+}
+
+ #nosotros .evolution-timeline .timeline-title {
+margin:.3rem 0; font-size:.95rem;
+}
+
+ #nosotros .evolution-timeline .timeline-list p {
+font-size:.9rem; max-width:52rem;
+}
+
+ #nosotros .evolution-timeline .timeline-intro {
+text-align:left;
+}
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+ #productos .category-filter {
+transition:none;
+}
+}

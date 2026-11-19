@@ -1,0 +1,86 @@
+/* Marco de index.html (encabezado + contenido + pie) y páginas de negocio.
+   Se carga después de alicorp-actualizacion.css; no modifica las hojas anteriores. */
+
+/* index.html: el iframe ocupa el alto de su contenido, así que solo se desplaza la página. */
+.contenido-frame {
+    display: block;
+    width: 100%;
+    min-height: 60vh;
+    border: 0;
+}
+
+/* Dentro del marco no debe aparecer una segunda barra de desplazamiento. */
+html.en-marco {
+    overflow: hidden;
+}
+
+/* consumo-masivo.html, soluciones-b2b.html y acuicultura.html: solo imagen + descripción. */
+.negocio-detalle {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.negocio-figura {
+    width: 100%;           /* mismo ancho que .about-banner de Nosotros (ancho del .container) */
+    margin: 0 0 1.35rem;
+}
+
+.negocio-img {
+    display: block;
+    width: 100%;
+    height: auto;          /* conserva la proporción original */
+    object-fit: contain;
+    box-shadow: var(--shadow);
+}
+
+.negocio-descripcion {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Artículos de las tres páginas de negocio: mismo lenguaje visual que Nosotros
+   (about-section, section-heading, subheading, info-panel, mission-vision). */
+.negocio-articulo p,
+.negocio-lista {
+    line-height: 1.55;
+    margin-bottom: .8rem;
+}
+
+.negocio-intro {
+    font-size: 1.05rem;
+}
+
+/* La regla general "section" añade 60 px de relleno; aquí los bloques usan el espaciado de Nosotros. */
+.negocio-bloque {
+    margin-top: 1.35rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.negocio-bloque.info-panel {
+    padding: 1rem;
+}
+
+.negocio-bloque > .subheading {
+    margin-bottom: .8rem;
+}
+
+.negocio-bloque.info-panel > :last-child,
+.negocio-conclusion > :last-child,
+.negocio-articulo .about-history > :last-child {
+    margin-bottom: .4rem;
+}
+
+.negocio-lista {
+    padding-left: 1.2rem;
+}
+
+.negocio-lista li {
+    margin-bottom: .3rem;
+}
+
+.negocio-conclusion {
+    border-left: 4px solid #b4232d;
+}
